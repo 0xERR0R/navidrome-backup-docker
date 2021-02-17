@@ -25,6 +25,7 @@ services:
       - 4533:4533
   backup:
     image: ghcr.io/0xerr0r/navidrome-backup-docker
+    container_name: navidrome-backup
     depends_on: 
       - navidrome
     volumes:
