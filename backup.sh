@@ -20,7 +20,7 @@ do
 done
 
 echo "creating backup archive"
-7z a /out/backup_$(date +"%Y%m%d_%H%M%S").zip $WORKDIR
+zip -jr /out/backup_$(date +"%Y%m%d_%H%M%S").zip $WORKDIR
 
 rm -rf $WORKDIR
 

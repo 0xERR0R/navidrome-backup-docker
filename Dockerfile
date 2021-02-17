@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.source="https://github.com/0xERR0R/navidrome-back
 RUN apk add --update \
     sqlite \
     bash \
-    p7zip
+    zip
 
 ADD backup.sh /opt/backup/
 ADD reports /opt/reports/
