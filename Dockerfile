@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.12
 
 LABEL org.opencontainers.image.source="https://github.com/0xERR0R/navidrome-backup-docker" \
       org.opencontainers.image.url="https://github.com/0xERR0R/navidrome-backup-docker" \
