@@ -19,8 +19,11 @@ do
     cat $f | sqlite3 -column -header /data/navidrome.db > $WORKDIR/"${report_file%.*}".txt
 done
 
-echo "creating backup archive"
-zip -jr /out/backup_$(date +"%Y%m%d_%H%M%S").zip $WORKDIR
+backup_file="backup_$(date +"%Y%m%d_%H%M%S").zip"
+echo "creating backup archive $backup_file"
+
+
+zip -jr /out/$backup_file $WORKDIR
 
 rm -rf $WORKDIR
 
